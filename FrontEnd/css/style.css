@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+  --cor1: #1a4c44;
+  --cor2: #76d1b0;
+}
+
+.logo {
+    height: 55px;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #fbf8f5;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > a > button {
+    height: 30px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+#btndashboard {
+    background-color: white;
+    border: 1px solid;
+}
+
+#btndashboard:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+#btnlogin {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+#btnlogin:hover {
+    background-color: var(--cor1);
+    color: white;
+    border: 1px solid var(--cor1);
+}
+
+#btnnovaconta {
+    background-color: var(--cor2);
+    border: 1px solid;
+}
+
+#btnnovaconta:hover {
+    background-color: var(--cor1);
+    color: white;
+    border: 1px solid var(--cor1);
+}
