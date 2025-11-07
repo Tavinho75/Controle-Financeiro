@@ -4,8 +4,9 @@
 }
 
 :root {
-  --cor1: #1a4c44;
-  --cor2: #76d1b0;
+    --cor1: #1a4c44;
+    --cor2: #76d1b0;
+    --fundo: #fbf8f5;
 }
 
 .logo {
@@ -13,20 +14,20 @@
 }
 
 header {
-    height: 80px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
-    background-color: #fbf8f5;
+    background-color: var(--fundo);
 }
 
-nav > a {
+nav>a {
     text-decoration: none;
     color: black;
 }
 
-nav > a > button {
+nav>a>button {
     height: 30px;
     padding: 0px 15px;
     border-radius: 5px;
@@ -64,4 +65,38 @@ nav > a > button {
     background-color: var(--cor1);
     color: white;
     border: 1px solid var(--cor1);
+}
+
+.divmain {
+    text-align: center;
+    height: 79.5vh;
+    background-image: linear-gradient(to right, #194b42, #5fa38a);
+}
+
+.divcaixas {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    margin: 50px 15px 0px 15px;
+    a: center;
+}
+
+.divsobre {
+    display: flex;
+    background-color: var(--fundo);
+    border-radius: 5px;
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 200px;
+    max-width: 300px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+footer {
+    height: 93px;
+    background-color: var(--fundo);
 }
