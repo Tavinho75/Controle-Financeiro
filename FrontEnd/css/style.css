@@ -67,6 +67,8 @@ nav>a>button {
     border: 1px solid var(--cor1);
 }
 
+/*todo  INDEX.HTML*/
+
 .divmain {
     text-align: center;
     height: 79.5vh;
@@ -74,21 +76,24 @@ nav>a>button {
 }
 
 .divcaixas {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 100px);
+    display: flex;
+    flex-wrap: wrap;
     margin: 50px 15px 0px 15px;
-    a: center;
+}
+
+.divgrupo {
+    display: flex;
+    margin: 15px;
+    gap: 10px;
+    width: 95vw;
 }
 
 .divsobre {
+    width: 28%;
+    margin: auto;
     display: flex;
     background-color: var(--fundo);
     border-radius: 5px;
-    flex: 1 1 calc(33.33% - 20px);
-    min-width: 200px;
-    max-width: 300px;
     height: 100px;
     align-items: center;
     justify-content: center;
@@ -97,6 +102,58 @@ nav>a>button {
 }
 
 footer {
+    padding-top: 27px;
     height: 93px;
     background-color: var(--fundo);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.fa-github {
+    margin: 7px 0px;
+    font-size: 1em;
+    color: black;
+}
+
+/*todo  LOGIN.HTML*/
+
+.divmain {
+    display: flex;
+    text-align: center;
+    height: 79.5vh;
+    background-image: linear-gradient(to right, #194b42, #5fa38a);
+    justify-content: center;
+    align-items: center;
+}
+
+.divlogin {
+    background-color: var(--fundo);
+    padding: 0px 50px 40px 50px;
+    border-radius: 5px;
+}
+
+.divlogin > h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    padding-top: 40px;
+}
+
+#esqueci {
+    background-color: var(--cor1);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+#entrar {
+    background-color: var(--cor2);
+    border: 1px solid;
+    border-radius: 5px;
+    width: 90%;
+    padding: 3px;
 }
